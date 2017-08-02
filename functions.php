@@ -9,7 +9,7 @@
  * @see 		https://codex.wordpress.org/Plugin_API
  * @author  	Mahdi Yazdani
  * @package 	Hypermarket Child
- * @since 		1.0.0
+ * @since 		1.0.1
  */
 if (!defined('ABSPATH')):
 	exit;
@@ -26,13 +26,17 @@ if (!class_exists('Hypermarket_Child')):
 		/**
 		 * Setup class.
 		 *
-		 * @since 1.0.0
+		 * @since 1.0.1
 		 */
 		public function __construct()
 
 		{
 			$this->parent_public_assets_url = esc_url(get_template_directory_uri() . '/assets/');
 			$this->child_public_assets_url = esc_url(get_stylesheet_directory_uri() . '/assets/');
+			add_action('after_setup_theme', array(
+				$this,
+				'setup'
+			) , 10);
 			add_action('wp_enqueue_scripts', array(
 				$this,
 				'enqueue'
@@ -41,6 +45,27 @@ if (!class_exists('Hypermarket_Child')):
 				$this,
 				'enqueue_child'
 			) , 99);
+		}
+		/**
+		 * Sets up theme defaults and registers support for various WordPress features.
+		 *
+		 * Note that this function is hooked into the after_setup_theme hook, which
+		 * runs before the init hook. The init hook is too late for some features, such
+		 * as indicating support for post thumbnails.
+		 *
+		 * @since 1.0.1
+		 */
+		public function setup()
+
+		{
+			/**
+			 *  This theme styles the visual editor to resemble the theme style,
+			 *  specifically font, colors, icons, and column width.
+			 */
+			add_editor_style( array( $this->child_public_assets_url . '/css/hypermarket-editor-style.css', add_query_arg(apply_filters('hypermarket_child_default_font_family', array(
+				'family' => urlencode('Work Sans:400,300,500,600'),
+				'subset' => urlencode('latin,latin-ext')
+			)) , 'https://fonts.googleapis.com/css')));
 		}
 		/**
 		 * Enqueue scripts and styles.
