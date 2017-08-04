@@ -86,7 +86,7 @@ if (!class_exists('Hypermarket_Child')):
 
 		{
 			wp_enqueue_style('hypermarket-child-theme-styles', $this->child_public_assets_url . '/css/hypermarket-child.css', HypermarketThemeVersion);
-			wp_enqueue_script('hypermarket-child-theme-scripts', $this->child_public_assets_url . 'js/hypermarket-child.js', array(
+			wp_enqueue_script('hypermarket-child-theme-scripts', $this->child_public_assets_url . '/js/hypermarket-child.js', array(
 				'jquery',
 				'hypermarket-scripts',
 				'hypermarket-theme-scripts'
