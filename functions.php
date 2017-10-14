@@ -9,7 +9,7 @@
  * @see 		https://codex.wordpress.org/Plugin_API
  * @author  	Mahdi Yazdani
  * @package 	Hypermarket Child
- * @since 		1.0.1
+ * @since 		1.0.2
  */
 if (!defined('ABSPATH')):
 	exit;
@@ -75,7 +75,7 @@ if (!class_exists('Hypermarket_Child')):
 		public function enqueue()
 
 		{
-			wp_enqueue_style('hypermarket-styles', $this->parent_public_assets_url . '/css/hypermarket-core.min.css', HypermarketThemeVersion);
+			wp_enqueue_style('hypermarket-styles', $this->parent_public_assets_url . '/css/hypermarket.css', HypermarketThemeVersion);
 		}
 		/**
 		 * Enqueue scripts and styles.
@@ -88,8 +88,7 @@ if (!class_exists('Hypermarket_Child')):
 			wp_enqueue_style('hypermarket-child-theme-styles', $this->child_public_assets_url . '/css/hypermarket-child.css', HypermarketThemeVersion);
 			wp_enqueue_script('hypermarket-child-theme-scripts', $this->child_public_assets_url . '/js/hypermarket-child.js', array(
 				'jquery',
-				'hypermarket-scripts',
-				'hypermarket-theme-scripts'
+				'hypermarket-scripts'
 			) , HypermarketThemeVersion, true);
 		}
 	}
