@@ -1,7 +1,7 @@
 # Hypermarket-Child
 
 <p align="center">
-<a href="https://www.mypreview.one" target="_blank"><img width="728" height="90" src="https://i.gyazo.com/b9cb600729a4f5c299c2d7224491e72d.png" alt="Buy Hypermarket Plus" /></a>
+<a href="https://www.mypreview.one/hypermarket-plus.html" target="_blank"><img width="728" height="90" src="https://i.gyazo.com/48108f1a52fd6bf4e7b110533f18dea0.png" alt="Buy Hypermarket Plus" /></a>
 </p>
 
 A blank Hypermarket child theme for your styling.
