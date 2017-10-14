@@ -62,7 +62,7 @@ if (!class_exists('Hypermarket_Child')):
 			 *  This theme styles the visual editor to resemble the theme style,
 			 *  specifically font, colors, icons, and column width.
 			 */
-			add_editor_style( array( $this->child_public_assets_url . '/css/hypermarket-editor-style.css', add_query_arg(apply_filters('hypermarket_child_default_font_family', array(
+			add_editor_style( array( $this->child_public_assets_url . '/css/editor-style.css', add_query_arg(apply_filters('hypermarket_child_default_font_family', array(
 				'family' => urlencode('Work Sans:400,300,500,600'),
 				'subset' => urlencode('latin,latin-ext')
 			)) , 'https://fonts.googleapis.com/css')));
