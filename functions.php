@@ -9,7 +9,7 @@
  * @see 		https://codex.wordpress.org/Plugin_API
  * @author  	Mahdi Yazdani
  * @package 	Hypermarket Child
- * @since 		1.0.3
+ * @since 		1.0.4
  */
 if (!defined('ABSPATH')):
 	exit;
@@ -70,7 +70,7 @@ if (!class_exists('Hypermarket_Child')):
 		/**
 		 * Enqueue scripts and styles.
 		 *
-		 * @since 1.0.2
+		 * @since 1.0.4
 		 */
 		public function enqueue()
 
