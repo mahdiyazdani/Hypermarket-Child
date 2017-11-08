@@ -76,6 +76,9 @@ if (!class_exists('Hypermarket_Child')):
 
 		{
 			wp_enqueue_style('hypermarket-styles', $this->parent_public_assets_url . '/css/hypermarket.css', HypermarketThemeVersion);
+			if (is_rtl()):
+				wp_enqueue_style('hypermarket-rtl-styles', get_template_directory_uri() . '/rtl.css', HypermarketThemeVersion);
+			endif;
 		}
 		/**
 		 * Enqueue scripts and styles.
