@@ -1,3 +1,6 @@
+= 1.0.4 =
+* Added RTL stylesheet support.
+
 = 1.0.3 =
 * Renamed TinyMCE editor stylesheets file.
 * Updated TinyMCE editor enqueue method.
