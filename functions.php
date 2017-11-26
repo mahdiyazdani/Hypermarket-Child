@@ -9,7 +9,7 @@
  * @see 		https://codex.wordpress.org/Plugin_API
  * @author  	Mahdi Yazdani
  * @package 	Hypermarket Child
- * @since 		1.0.4
+ * @since 		1.0.5
  */
 if (!defined('ABSPATH')):
 	exit;
@@ -75,9 +75,9 @@ if (!class_exists('Hypermarket_Child')):
 		public function enqueue()
 
 		{
-			wp_enqueue_style('hypermarket-styles', $this->parent_public_assets_url . '/css/hypermarket.css', HypermarketThemeVersion);
+			wp_enqueue_style('hypermarket-styles', $this->parent_public_assets_url . '/css/hypermarket.css', HYPERMARKET_THEME_VERSION);
 			if (is_rtl()):
-				wp_enqueue_style('hypermarket-rtl-styles', get_template_directory_uri() . '/rtl.css', HypermarketThemeVersion);
+				wp_enqueue_style('hypermarket-rtl-styles', get_template_directory_uri() . '/rtl.css', HYPERMARKET_THEME_VERSION);
 			endif;
 		}
 		/**
@@ -88,11 +88,11 @@ if (!class_exists('Hypermarket_Child')):
 		public function enqueue_child()
 
 		{
-			wp_enqueue_style('hypermarket-child-styles', $this->child_public_assets_url . '/css/hypermarket-child.css', HypermarketThemeVersion);
+			wp_enqueue_style('hypermarket-child-styles', $this->child_public_assets_url . '/css/hypermarket-child.css', HYPERMARKET_THEME_VERSION);
 			wp_enqueue_script('hypermarket-child-scripts', $this->child_public_assets_url . '/js/hypermarket-child.js', array(
 				'jquery',
 				'hypermarket-scripts'
-			) , HypermarketThemeVersion, true);
+			) , HYPERMARKET_THEME_VERSION, true);
 		}
 	}
 endif;
