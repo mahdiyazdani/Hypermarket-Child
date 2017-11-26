@@ -70,7 +70,7 @@ if (!class_exists('Hypermarket_Child')):
 		/**
 		 * Enqueue scripts and styles.
 		 *
-		 * @since 1.0.4
+		 * @since 1.0.5
 		 */
 		public function enqueue()
 
@@ -83,7 +83,7 @@ if (!class_exists('Hypermarket_Child')):
 		/**
 		 * Enqueue scripts and styles.
 		 *
-		 * @since 1.0.2
+		 * @since 1.0.5
 		 */
 		public function enqueue_child()
 
