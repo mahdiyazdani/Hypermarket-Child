@@ -10,4 +10,4 @@ A blank Hypermarket child theme for your styling.
 
 [Visit live/online demo](https://demo.mypreview.one/hypermarket/)
 
-Something missing? Join our [support forums](https://support.mypreview.one) and let us help you.
+Something missing? Join our [support forums](https://support.mypreview.one/t/hypermarket) and let us help you.
