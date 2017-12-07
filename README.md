@@ -6,6 +6,8 @@
 
 A blank Hypermarket child theme for your styling.
 
+![Hypermarket WordPress Child Theme](screenshot.jpg)
+
 [Offical theme post page](https://wordpress.org/themes/hypermarket/)
 
 [Visit live/online demo](https://demo.mypreview.one/hypermarket/)
