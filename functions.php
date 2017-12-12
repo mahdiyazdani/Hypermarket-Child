@@ -57,7 +57,12 @@ if (!class_exists('Hypermarket_Child')):
 		 */
 		public function setup()
 
-		{
+		{	
+			/**
+			 *  Declare textdomain for this child theme.
+			 *  Translations can be added to the /languages/ directory.
+			 */
+			load_child_theme_textdomain('hypermarket-child', get_stylesheet_directory() . '/languages');
 			/**
 			 *  This theme styles the visual editor to resemble the theme style,
 			 *  specifically font, colors, icons, and column width.
