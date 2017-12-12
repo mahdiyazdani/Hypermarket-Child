@@ -9,7 +9,7 @@
  * @see 		https://codex.wordpress.org/Plugin_API
  * @author  	Mahdi Yazdani
  * @package 	Hypermarket Child
- * @since 		1.0.5
+ * @since 		1.0.6
  */
 if (!defined('ABSPATH')):
 	exit;
@@ -53,7 +53,7 @@ if (!class_exists('Hypermarket_Child')):
 		 * runs before the init hook. The init hook is too late for some features, such
 		 * as indicating support for post thumbnails.
 		 *
-		 * @since 1.0.3
+		 * @since 1.0.6
 		 */
 		public function setup()
 
